@@ -24,12 +24,19 @@ body {
 .content-container {
   max-width: 38rem;
   padding: 2rem 1.5rem;
-  margin-left:  0rem;
-  margin-right: 0rem;
+  margin-left:  auto;
+  margin-right: auto;
 
   @media (min-width: 38rem){
     padding: 5rem 1rem;
   }
+}
+
+# graphicals {
+	margin-left:  0rem;
+	margin-right: 0rem;
+	margin-top: 0rem;
+	margin-bottom: 0rem;
 }
 
 
