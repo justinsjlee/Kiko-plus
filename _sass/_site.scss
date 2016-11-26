@@ -21,27 +21,23 @@ body {
   padding: 0;
 }
 
+.content-container2 {
+	position: absolute;
+	left: 200px;
+	top: 180px;
+
+}
+
 .content-container {
-  max-width: 50rem;
+  max-width: 38rem;
   padding: 2rem 1.5rem;
   margin-left:  auto;
   margin-right: auto;
 
   @media (min-width: 38rem){
     padding: 5rem 1rem;
-	  
   }
 }
-
-.content-container2 {
-	position: absolute;
-	left: 200px;
-	top: 180px;
-
-  padding: 2rem 1.5rem;
-
-}
-
 
 
 /*--------------
@@ -52,10 +48,9 @@ body {
 
   &-title {
     font-weight: 300;
-	  font-size: 3rem;
-	  
     a {
       color: $base-color;
+	    font-size: 2.8rem;
 
       &:hover,
       &:focus {
@@ -73,7 +68,6 @@ body {
     a {
       color: lighten($base-color, 50);
       font-weight: 300;
-font-size: 1rem; 
       text-transform: lowercase;
       -webkit-transition: all .2s ease;
          -moz-transition: all .2s ease;
