@@ -9,8 +9,8 @@ My name is Justin and I'm a digital analytics co-op student, on track to graduat
 
 Coffee, squash, comic books, documentaries & podcasts are the things that bring me joy.
 
-If you'd like to chat about any of the above, I can be reached at justinsj.lee@mail.utoronto.ca
+For a full description of my capabilities & experience, please refer to my resume.
 
-For a more specific description of my capabilities & experience, please refer to my resume here. 
+If you'd like to chat about any of the above, I can be reached at [mailto:justinsj.lee@mail.utoronto.ca]
 
-Currently based in ~~Seoul~~ ~~Vancouver~~ Toronto.
+Currently based in ~~Seoul~~  ~~Vancouver~~  Toronto.
