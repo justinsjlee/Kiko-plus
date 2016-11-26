@@ -25,7 +25,7 @@ disqus:
 
 # URL
 #url:                "https://AWEEKJ.github.io" # the base hostname & protocol for your site
-url:                "http://justinsjlee.github.io" # use this url when develop
+url:                "http://www.justinsjlee.com" # use this url when develop
 baseurl:            "" # the subpath of your site, e.g. /blog
 
 
