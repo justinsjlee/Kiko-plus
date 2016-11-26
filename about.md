@@ -1,9 +1,7 @@
 ---
 title: About
-permalink: /about/
+permalink: "/about/"
 ---
-
-
 
 ## Hello
 
