@@ -11,6 +11,6 @@ Coffee, squash, comic books, documentaries & podcasts are the things that bring 
 
 For a full description of my capabilities & experience, please refer to my resume.
 
-If you'd like to chat about any of the above, I can be reached at [mailto:justinsj.lee@mail.utoronto.ca]
+If you'd like to chat about any of the above or are looking to have a compelling talk on Toronto's best restaurants, I can be reached at justinsj.lee@mail.utoronto.ca
 
-Currently based in ~~Seoul~~  ~~Vancouver~~  Toronto.
+Currently based in ~~Seoul~~ ~~Vancouver~~ Toronto.
