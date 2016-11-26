@@ -13,4 +13,4 @@ You can view some of the projects that I've worked on here.
 
 I also write occasionally about numbers, design & culture here. 
 
-Currently based in ~~Vancouver~~ Toronoto
+Currently based in ~~Vancouver~~ Toronto.
