@@ -30,7 +30,7 @@ author:
 google-analytics:
   id: UA-75000604-7
 disqus:
-  id: justinsjlee
+  id:
 url: http://www.justinsjlee.com
 baseurl: ''
 permalink: "/:year-:month-:day/:title/"
