@@ -21,9 +21,18 @@ body {
   padding: 0;
 }
 
+@media screen and (max-device-width : 667px) {
+    content-container2 {
+        left: 50%;
+	    transform: translateX(-50%);
+    }
+}
+
+
 .content-container2 {
+	
 	position: absolute;
-	left: 20%;
+	left: 15%;
 	top: 25%;
 	width: 302px;
 	height: 116px;
