@@ -15,7 +15,7 @@ I also write occasionally about numbers, design & culture here.
 
 To get in touch, please use the buttons below.
 
-Currently based in Toronto. ~~Vancouver~~
+Currently based in ~~Vancouver~~ Toronto. 
 
 
 
