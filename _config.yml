@@ -42,8 +42,8 @@ kramdown:
 nav:
 - name: About
   url: "/about"
-- name: Archive
-  url: "/archive"
+- name: Blog
+  url: "/blog"
 - name: Tags
   url: "/tags"
 - name: Github
