@@ -47,7 +47,7 @@ nav:
 - name: Tags
   url: "/tags"
 - name: Github
-  url: https://github.com/AWEEKJ/Kiko-plus
+  url: https://github.com/justinsjlee
 sass:
   sass_dir: _sass
   style: :compressed
