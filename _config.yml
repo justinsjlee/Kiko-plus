@@ -54,5 +54,6 @@ sass:
 gems:
 - jekyll-seo-tag
 - jekyll-paginate
+- jekyll-sitemap
 exclude:
 - vendor
