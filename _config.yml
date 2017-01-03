@@ -26,7 +26,7 @@ author:
   github: justinsjlee
   linkedin: justinsjlee
   medium: justinsjlee
-  email: justinsj.lee@mail.utoronto.ca
+  email: hi@justinsjlee.com
 google-analytics:
   id: UA-75000604-7
 disqus:
@@ -46,8 +46,8 @@ nav:
   url: "/blog"
 - name: Tags
   url: "/tags"
-- name: Github
-  url: https://github.com/justinsjlee
+- name: Projects
+  url: "/projects"
 sass:
   sass_dir: _sass
   style: :compressed
