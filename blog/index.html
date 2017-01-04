@@ -9,6 +9,7 @@ layout: page
     <h2>No post found</h2>
   {% else %}
   {% for post in site.posts %}
+    {% if post.category == "blog"%}
     <div class="archive-list-post">
       {% if post.link %}
       <a href="{{ post.link }}">
@@ -23,6 +24,7 @@ layout: page
         </span>
       </a>
     </div>
+    {% endif %}
   {% endfor %}
   {% endif %}
   </div>
