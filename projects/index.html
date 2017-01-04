@@ -5,10 +5,10 @@ layout: page
 
 <div class="archive">
   <div class="archive-list">
-  {% if site.posts.size == 0 %}
+  {% if site.posts2.size == 0 %}
     <h2>No post found</h2>
   {% else %}
-  {% for post in site.posts %}
+  {% for post in site.posts2 %}
     <div class="archive-list-post">
       {% if post.link %}
       <a href="{{ post.link }}">
