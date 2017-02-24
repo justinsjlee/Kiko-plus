@@ -1,5 +1,5 @@
 ---
-title: Visualizing Trends in Undergrad Tuition in Canada
+title: Visualizing Trends In Tuition Across Canada
 date: 2017-02-23 00:00:00 -04:00
 tags:
 - dataviz
