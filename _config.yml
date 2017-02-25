@@ -21,7 +21,10 @@ defaults:
     layout: post
 name: Justin SJ Lee
 author:
+
   name: Justin SJ Lee
+  medium: justinsjlee
+  github: justinsjlee
   twitter: justinsjlee
   linkedin: justinsjlee
   email: hi@justinsjlee.com
