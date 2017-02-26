@@ -19,4 +19,4 @@ As expected, the general trend is upwards for undergraduate tuition in Canadian 
 
 Hovering over a point will give you the exact Tuition for the academic year in a province. Please toggle the discipline menu on the right to discover different fields.
 
-This viz was made for Tableau Public's #HackingOpenData project; to view my full Tableau Public Portfolio visit [my profile](https://public.tableau.com/profile/justin.sj.lee#!/)
+This viz was made for Tableau Public's #HackingOpenData project; to view my full Tableau portfolio visit [my profile](https://public.tableau.com/profile/justin.sj.lee#!/)
