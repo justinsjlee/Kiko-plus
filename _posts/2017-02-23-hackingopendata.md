@@ -11,7 +11,11 @@ share: false
 category: projects
 ---
 
+![Screenshot](http://www.justinsjlee.com/costofstudying.png "Cost of Studying PNG")
+
 You can view the interactive dashboard [here](https://public.tableau.com/profile/justin.sj.lee#!/vizhome/TuitionCostsRisingAcrossCanada/Main).
+
+
 
 As expected, the general trend is upwards for undergraduate tuition in Canadian Universities. I displayed the data from Years 2012 ~ 2017 using a slopegraph; this method makes it easy to spot any outliers like tuition decreasing over the years.
 
