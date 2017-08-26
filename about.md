@@ -3,8 +3,19 @@ title: About
 permalink: "/about/"
 ---
 
-My name is Justin and I’m a digital analytics Co-Op student, on track to graduate from the University of Toronto in 2018. I like solving complex problems, discovering new insights and sharing my knowledge with those around me. I study statistics & economics which involves using data + programming + critical thinking to create elegant solutions to tough problems. I find this work very enjoyable and look forward to working with new, exciting data.
+4th year student at the University of Toronto specializing in Applied Statistics with 16 months of co-op work experience in a business intelligence and analytics function seeking a role that supports data-driven decision making and leverages predictive analytics to create value.
 
-For a full description of my experience & technical skillset, please refer to my [resume](http://www.justinsjlee.com/Resume.pdf). You can view some of the projects that I've worked on [here](http://www.justinsjlee.com/projects). I also write occasionally about numbers, design & culture [here](http://www.justinsjlee.com/blog). 
+My Specialties:
+
+* BI Reporting/dashboard automation via ETLs.
+* Statistical modelling & supervised machine learning.
+* Hypothesis testing via A/B, multivariate tests.
+* Data visualization & storytelling with numbers. 
+
+Projects I’ve worked on: Customer Segmentation, Marketing Mix Modelling, Propensity Modelling, Experimental Design, Multi-Channel Attribution, Digital Analytics Implementation, Reporting & Optimization.
+
+I occasionally write about new things I’m learning at work & school under [projects](http://www.justinsjlee.com/projects).
+
+Otherwise doodling, hiking, watching cyberpunk films & documentaries, drinking too much coffee and exploring the great universe. 
 
 To get in touch, use the buttons below.
