@@ -1,5 +1,5 @@
 ---
-title: Visualizing Trends In Tuition Across Canada
+title: Visualizing Tuition Across Canada
 date: 2017-02-23 00:00:00 -04:00
 tags:
 - dataviz
@@ -13,10 +13,12 @@ category: projects
 
 ![Screenshot](http://www.justinsjlee.com/costofstudying1.png "Cost of Studying 1 PNG")
 
-You can view the interactive dashboard [here](https://public.tableau.com/profile/justin.sj.lee#!/vizhome/TuitionCostsRisingAcrossCanada/Main).
+You can view the full interactive dashboard [on Tableau Public](https://public.tableau.com/profile/justin.sj.lee#!/vizhome/TuitionCostsRisingAcrossCanada/Main).
 
-As expected, the general trend is upwards for undergraduate tuition in Canadian Universities over the past 5 years. I displayed the data from Years 2012 ~ 2017 using a slopegraph; this method makes it easy to spot any outliers like tuition decreasing over the years, which occurs in certain cases. 
+Hovering over a point will give you the exact Tuition for the academic year in a province. To explore trends in tuition for different fields of study, select the desired discipline on the right.
 
-Hovering over a point will give you the exact Tuition for the academic year in a province. Please toggle the discipline menu on the right to discover different fields.
+As expected, the tuition is increasing for most undergraduate programs in Canadian Universities over the past 5 years. The data is displayed via a slopegraph; this method makes it easy to spot any outliers such as decreasing tuition or very steep increases YoY. 
 
-This viz was made for Tableau Public's #HackingOpenData project; to view my full Tableau portfolio visit [my profile](https://public.tableau.com/profile/justin.sj.lee#!/)
+To learn more about slope graphs, check out Edward Tufte's [comprehensive introduction](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0003nk).
+
+This viz was made for Tableau Public's #HackingOpenData project with Melissa Schuurman.
