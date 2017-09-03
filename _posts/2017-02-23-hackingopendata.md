@@ -11,7 +11,7 @@ share: false
 category: projects
 ---
 
-![Screenshot](http://www.justinsjlee.com/costofstudying1.png "Cost of Studying 1 PNG")
+[![Screenshot](http://www.justinsjlee.com/costofstudying1.png](http://www.google.com)
 
 You can view the interactive dashboard [here](https://public.tableau.com/profile/justin.sj.lee#!/vizhome/TuitionCostsRisingAcrossCanada/Main).
 
