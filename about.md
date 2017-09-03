@@ -7,12 +7,12 @@ permalink: "/about/"
 
 My specialties:
 
-* BI Reporting/dashboard automation via ETLs.
+* BI reporting/dashboard automation via ETLs.
 * Statistical modelling & supervised machine learning.
-* Hypothesis testing via A/B, multivariate tests.
-* Data visualization & storytelling with numbers. 
+* Experimental design, hypothesis testing & A/B testing. 
+* Storytelling with numbers & data visualization.
 
-Projects I’ve worked on: Customer Segmentation, Marketing Mix Modelling, Propensity Modelling, Experimental Design, Multi-Channel Attribution, Digital Analytics Implementation, Reporting & Optimization.
+Projects I’ve worked on: Customer Segmentation, Marketing Mix Modelling, Multi-Channel Attribution, Digital Analytics Implementation, Reporting & Optimization.
 
 I occasionally write about new things I’m learning at work & school under [projects](http://www.justinsjlee.com/projects).
 
