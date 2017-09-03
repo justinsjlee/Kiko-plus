@@ -1,5 +1,5 @@
 ---
-title: Visualizing Flows With The Chord Diagram
+title: Show Flows With The Chord Diagram
 date: 2017-09-02 00:00:00 -04:00
 tags:
 - dataviz
@@ -11,12 +11,24 @@ share: false
 category: projects
 ---
 
-![Screenshot](http://www.justinsjlee.com/chordiagv2.png "Chord Diagram")
+![Screenshot](http://www.justinsjlee.com/chordiag_wlabels.png "Chord Diagram with Labels")
 
-You can view the interactive visual [here](http://www.justinsjlee.com/telco_ex.html).
+One interesting method of data visualization I learned about during my co-op term is the chord diagram. I found this graph to be very useful in displaying flows between multiple groups in a concise manner though the interpertation takes some explanation.
 
-As expected, the general trend is upwards for undergraduate tuition in Canadian Universities over the past 5 years. I displayed the data from Years 2012 ~ 2017 using a slopegraph; this method makes it easy to spot any outliers like tuition decreasing over the years, which occurs in certain cases. 
+which according to wikipedia is a graphical method of displaying the inter-relationships between data in a matrix. 
 
-Hovering over a point will give you the exact Tuition for the academic year in a province. Please toggle the discipline menu on the right to discover different fields.
+You can view the interactive graph [here](http://www.justinsjlee.com/telco_ex.html). Note: The numbers from the examples are randomly selected solely for the purpose of this post.
 
-This viz was made for Tableau Public's #HackingOpenData project; to view my full Tableau portfolio visit [my profile](https://public.tableau.com/profile/justin.sj.lee#!/)
+![Screenshot](http://www.justinsjlee.com/chordiag.png "Chord Diagram")
+
+![Screenshot](http://www.justinsjlee.com/chordiag_arc.png "Chord Diagram Arc")
+
+![Screenshot](http://www.justinsjlee.com/chordiag_chord.png "Chord Diagram Chord Grey")
+
+![Screenshot](http://www.justinsjlee.com/chordiag_chordred.png "Chord Diagram Chord Red")
+
+![Screenshot](http://www.justinsjlee.com/chordiag_internal.png "Chord Diagram Internal")
+
+
+
+
