@@ -23,7 +23,7 @@ The chords in the graph show the inter-relationships between the groups. In our 
 
 ![Screenshot](http://www.justinsjlee.com/chordiag_arc.png "Chord Diagram Arc")
 
-Hovering over the arc of a brand gives information about the share of total before the upgrade. Hovering over Rogers' arc shows that 33% of customers in our dataset had their service with Rogers before the upgrade.
+Hovering over the arc of a brand gives information about the share of the customer base before the upgrade. Rogers' arc shows that 33% of customers had Roger's as the service provider before the upgrade.
 
 ![Screenshot](http://www.justinsjlee.com/chordiag_chord.png "Chord Diagram Chord Grey")
 
