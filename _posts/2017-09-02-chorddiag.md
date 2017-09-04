@@ -13,11 +13,10 @@ category: projects
 
 ![Screenshot](http://www.justinsjlee.com/chordiag_wlabels.png "Chord Diagram with Labels")
 
-One interesting method of data visualization I learned about during my co-op term is the chord diagram. I found this graph to be very useful in displaying flows between multiple groups in a concise manner.
+One interesting method of data visualization I learned about during my co-op term is the chord diagram. I found this graph to be very useful in displaying flows between multiple groups in a concise manner. You can view the interactive graph [here](http://www.justinsjlee.com/telco_ex.html).
 
-which according to wikipedia is a graphical method of displaying the inter-relationships between data in a matrix. 
+Note: The numbers from the examples are solely for the purpose of this post.
 
-You can view the interactive graph [here](http://www.justinsjlee.com/telco_ex.html). Note: The numbers from the examples are solely for the purpose of this post.
 
 ![Screenshot](http://www.justinsjlee.com/chordiag.png "Chord Diagram")
 
