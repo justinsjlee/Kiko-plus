@@ -19,7 +19,7 @@ Note: The numbers from the examples are solely for the purpose of this post.
 
 ![Screenshot](http://www.justinsjlee.com/chordiag.png "Chord Diagram")
 
-### Interperting the chord diagram:
+### Interperting the diagram:
 The chords in the graph show the inter-relationships between the groups. In our case, the data is based on the movement of customers accross Canadian telecommunications companies at the time of a device upgrade.
 
 ![Screenshot](http://www.justinsjlee.com/chordiag_arc.png "Chord Diagram Arc")
@@ -40,8 +40,7 @@ The internal flow shows the percentage of customers staying at the same brand wh
 
 ### How to & the data:
 
-The data is in a matrix as seen below. The row names represent the destination 
-The diagonal shows the internal flows accross the brands.
+The data is in a matrix as seen below. The row names represent the names of the brands pre-upgrade and the column names represent the brands post-upgrade. As a result, the diagonal shows the percentage of customers upgrading while sticking to the same provider.
 
 | From\To |Rogers | Bell | Telus| Other|
 |:-------:|:---:|:----:|:----:|:----:|
