@@ -39,11 +39,16 @@ The internal flow shows the percentage of customers staying at the same brand wh
 
 How to & the data:
 
+The data is in a matrix as seen below. The row names represent the destination 
+The diagonal shows the internal flows accross the brands.
+
 | From\To |Rogers | Bell | Telus| Other|
-|:-------:|:-----:|:----:|:----:|:----:|
-|  Rogers |  24%  |  25% |  2%  |  5%  |
+|:-------:|:---:|:----:|:----:|:----:|
+|  Rogers |  24%  |  2%  |  2%  |  5%  |
 |  Bell   |  5%   |  23% |  2%  |  2%  |
 |  Telus  |  3%   |  3%  |  18% |  3%  |
 |  Other  |  2%   |  3%  |  1%  |  2%  |
+
+
 
 Sources & credits:
