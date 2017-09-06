@@ -95,9 +95,11 @@ To export the diagram as a web page I'm using the Export function built into the
 
 ### Sources & credits
 
-Read more about the ```chorddiag``` package by [Matt Flor](https://github.com/mattflor/chorddiag) that I used to create the chord diagram.
+Read more about the ```chorddiag``` R package by [Matt Flor](https://github.com/mattflor/chorddiag).
 
-This article was inspired by [Visual Cinnamon's](https://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html) usage of chord diagram.
+This article was inspired by [Visual Cinnamon's](https://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html) article on the chord diagram.
+
+Special thanks to the folks at Clickinsight for giving me the oppurtunity to learn and apply these new techniques.
 
 
 
