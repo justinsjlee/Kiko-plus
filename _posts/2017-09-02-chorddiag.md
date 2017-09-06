@@ -93,13 +93,13 @@ To export the diagram as a web page I'm using the Export function built into the
 
 ### Credits & notes
 
-Like other methods of data visualization, the chord diagram is just one tool for displaying the given data. There are various methods of visualizing 2-way flow, but I think the radial nature of this graph visualizes multiple relationships in a concise manner. Check out the [snakey diagram](https://bost.ocks.org/mike/sankey/) for visualizing 1-way flow; I think this method works especially well when there's multiple levels in a flow.
+Like other methods of data visualization, the chord diagram is just one tool for displaying the given data. There are various methods of visualizing 2-way flow, but I think the radial nature of this graph visualizes multiple relationships in a concise manner. Check out the [sankey diagram](https://bost.ocks.org/mike/sankey/) for visualizing 1-way flow; I think this method works especially well when there's multiple levels in a flow.
 
 Read more about the ```chorddiag``` R package by [Matt Flor](https://github.com/mattflor/chorddiag).
 
 This article was inspired by [Visual Cinnamon's](https://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html) article on the chord diagram.
 
-Special thanks to the folks at [Clickinsight](https://www.clickinsight.ca) for giving me the oppurtunity to learn and apply new visualization techniques.
+Special thanks to the folks at [Clickinsight](https://www.clickinsight.ca) for giving me the oppurtunity to learn and encouraging me to apply new visualization techniques.
 
 
 
