@@ -54,7 +54,7 @@ You can read the table as shown below.
 
 Rogers → Rogers: 24%, Rogers → Bell: 2%,  Rogers → Telus: 2%,  Rogers → Other: 5%
 
-The diagram is made with the ```chorddiag``` package in R. The package uses the Javascript visualization library [D3.js](http://d3js.org) and the ```htmlwidgets``` pacakge. 
+The diagram is made with the ```chorddiag``` package in R. The package uses the Javascript visualization library [D3.js](http://d3js.org) and the ```htmlwidgets``` package. Here is the R script for creating the sample dataset and rendering the chord diagram.
 
 ```
 # Install chorddiag package from github
@@ -79,7 +79,7 @@ arcs <- c("Rogers", "Bell", "Telus", "Other")
 dimnames(telco_ex) <- list(from = arcs, to = arcs)
 
 # Create a list of colors with HEX codes to match the brands.
-# Bell's Blue: #0066a4, Rogers' Red: #e1292f, Telus's Green: #6cbf44, Other: #a6a6a6
+# Bell: #0066a4, Rogers: #e1292f, Telus: #6cbf44, Other: #a6a6a6
 groupColors <- c("#e1292f", "#0066a4", "#6cbf44", "#a6a6a6")
 
 # Render chord diagram. 
@@ -97,7 +97,7 @@ To export the diagram as a web page I'm using the Export function built into the
 
 Read more about the ```chorddiag``` package by [Matt Flor](https://github.com/mattflor/chorddiag) that I used to create the chord diagram.
 
-This article was inspired by Visual Cinnamon's usage of chord diagram here (link)
+This article was inspired by [Visual Cinnamon's](https://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html) usage of chord diagram.
 
 
 
