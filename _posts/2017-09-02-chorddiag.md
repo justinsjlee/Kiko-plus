@@ -56,7 +56,6 @@ Rogers → Rogers: 24%, Rogers → Bell: 2%,  Rogers → Telus: 2%,  Rogers → 
 
 The diagram is made with the ```chorddiag``` package in R. The package uses the Javascript visualization library [D3.js](http://d3js.org) and the ```htmlwidgets``` package. Here is the R script for creating the sample dataset and rendering the chord diagram.
 
-
     # Install chorddiag package from github
     devtools::install_github("mattflor/chorddiag")
 
@@ -78,11 +77,9 @@ The diagram is made with the ```chorddiag``` package in R. The package uses the 
     arcs <- c("Rogers", "Bell", "Telus", "Other")
     dimnames(telco_ex) <- list(from = arcs, to = arcs)
 
-
     # Create a list of colors with HEX codes to match the brands.
     # Bell: #0066a4, Rogers: #e1292f, Telus: #6cbf44, Other: #a6a6a6
     groupColors <- c("#e1292f", "#0066a4", "#6cbf44", "#a6a6a6")
-
 
     # Render chord diagram. 
     chorddiag(telco_ex, 
@@ -92,7 +89,6 @@ The diagram is made with the ```chorddiag``` package in R. The package uses the 
               tooltipFontsize = 16,
               tooltipUnit = "%")
     
-
 To export the diagram as a web page I'm using the Export function built into the Viewer tab in RStudio. Opening the resulting web page should give you [this](http://www.justinsjlee.com/telco_ex.html).
 
 ### Sources & credits
