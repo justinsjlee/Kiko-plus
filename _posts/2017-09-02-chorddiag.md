@@ -52,7 +52,7 @@ The data is in a matrix as seen below. The row names represent the names of the 
 
 You can read the table as shown below.
 
-Rogers → Bell: 24% Rogers → Bell: 2% Rogers → Telus: 2% Rogers → Other: 5%
+Rogers → Rogers: 24%, Rogers → Bell: 2%,  Rogers → Telus: 2%,  Rogers → Other: 5%
 
 The diagram is made with the ```chorddiag``` package in R. The package uses the Javascript visualization library [D3.js](http://d3js.org) and the ```htmlwidgets``` pacakge. 
 
