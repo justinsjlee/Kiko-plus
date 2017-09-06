@@ -91,7 +91,7 @@ The diagram is made with the ```chorddiag``` package in R. The package uses the 
     
 To export the diagram as a web page I'm using the Export function built into the Viewer tab in RStudio. Opening the resulting web page should give you [this](http://www.justinsjlee.com/telco_ex.html).
 
-### Credits & notes
+### Notes & credits
 
 Like other methods of data visualization, the chord diagram is just one tool for displaying the given data. There are various methods of visualizing 2-way flow, but I think the radial nature of this graph visualizes multiple relationships in a concise manner. Check out the [sankey diagram](https://bost.ocks.org/mike/sankey/) for visualizing 1-way flow; I think this method works especially well when there's multiple levels in a flow.
 
