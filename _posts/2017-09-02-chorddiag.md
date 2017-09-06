@@ -15,7 +15,7 @@ category: projects
 
 One interesting method of data visualization I learned about during my co-op term is the chord diagram. I found this graph to be very useful in displaying flows between multiple groups in a concise manner. You can view the interactive graph [here](http://www.justinsjlee.com/telco_ex.html).
 
-Note: The numbers from the examples are solely for the purpose of this post.
+Note: The numbers from the examples are made up by me solely for the purpose of this post.
 
 ### Interperting the diagram
 
@@ -25,15 +25,15 @@ The chords in the graph show the inter-relationships between the groups. In our 
 
 ![Screenshot](http://www.justinsjlee.com/chordiag_arc.png "Chord Diagram Arc")
 
-Hovering over the arc of a brand gives information about the share of the customer base before the upgrade. Rogers' arc shows that 33% of customers had Roger's as the service provider before the upgrade.
+Hovering over the arc of a brand gives information about the share of the customer base before the upgrade. Rogers' arc shows that 33% of customers had Roger's as their service provider at the time of the upgrade.
 
 ![Screenshot](http://www.justinsjlee.com/chordiag_chord.png "Chord Diagram Chord Grey")
 
-Hovering over one arc gives information about the relationship between the two brands. The width of the arc corresponds to the magnitude of the flow.
+Hovering over an arc gives information about the relationship between the two brands. The width of the arc corresponds to the magnitude of the flow.
 
 ![Screenshot](http://www.justinsjlee.com/chordiag_chordred.png "Chord Diagram Chord Red")
 
-The color of the chord is determined by the net positive brand in the relationship. You can see how Rogers has a 3% gain in its chord with Bell.
+The color of the chord is determined by the net positive brand in the relationship. You can see how Rogers has a 3% gain in its chord with Bell, thus the chord is red.
 
 ![Screenshot](http://www.justinsjlee.com/chordiag_internal.png "Chord Diagram Internal")
 
@@ -91,13 +91,16 @@ The diagram is made with the ```chorddiag``` package in R. The package uses the 
     
 To export the diagram as a web page I'm using the Export function built into the Viewer tab in RStudio. Opening the resulting web page should give you [this](http://www.justinsjlee.com/telco_ex.html).
 
-### Sources & credits
+### Credits & notes
+
+Like other methods of data visualization, the chord diagram is just one tool for displaying the given data. There are various methods of visualizing 2-way flow, but I think the radial nature of this graph visualizes multiple relationships in a concise manner. Check out the [snakey diagram](https://bost.ocks.org/mike/sankey/) for visualizing 1-way flow; I think this method works especially well when there's multiple levels in a flow.
 
 Read more about the ```chorddiag``` R package by [Matt Flor](https://github.com/mattflor/chorddiag).
 
 This article was inspired by [Visual Cinnamon's](https://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html) article on the chord diagram.
 
 Special thanks to the folks at [Clickinsight](https://www.clickinsight.ca) for giving me the oppurtunity to learn and apply new visualization techniques.
+
 
 
 
