@@ -99,7 +99,7 @@ Read more about the ```chorddiag``` R package by [Matt Flor](https://github.com/
 
 This article was inspired by [Visual Cinnamon's](https://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html) article on the chord diagram.
 
-Special thanks to the folks at [Clickinsight](https://www.clickinsight.ca) (my former employer) for giving me the oppurtunity to learn and apply these new techniques.
+Special thanks to the folks at [Clickinsight](https://www.clickinsight.ca) for giving me the oppurtunity to learn and apply these new techniques.
 
 
 
