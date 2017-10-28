@@ -3,11 +3,11 @@ title: About
 permalink: "/about/"
 ---
 
-4th year student at the University of Toronto specializing in Applied Statistics with 16 months of co-op work experience in a business intelligence and analytics function seeking a role that supports data-driven decision making and leverages predictive analytics to create value.
+4th year student at the University of Toronto double majoring in statistics and economics with 16 months of co-op work experience in a business intelligence and analytics function seeking a role that supports data-driven decision making and leverages predictive analytics to create value.
 
 My specialties:
 
-* BI reporting/dashboard automation via ETLs.
+* BI reporting/dashboard automation.
 * Statistical modelling & supervised machine learning.
 * Experimental design, hypothesis testing & A/B testing. 
 * Storytelling with numbers & data visualization.
