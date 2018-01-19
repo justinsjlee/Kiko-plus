@@ -3,7 +3,7 @@ title: About
 permalink: "/about/"
 ---
 
-4th year student at the University of Toronto double majoring in statistics and economics with 16 months of co-op work experience in a business intelligence and analytics function seeking a role that supports data-driven decision making and leverages predictive analytics to create value.
+4th year student at the University of Toronto double majoring in statistics and economics on track to graduate in 06' 2018.
 
 My specialties:
 
@@ -16,4 +16,4 @@ Projects I’ve worked on: Customer Segmentation, Marketing Mix Modelling, Multi
 
 I occasionally write about new things I’m learning at work & school under [projects](http://www.justinsjlee.com/projects).
 
-Otherwise doodling, hiking, watching cyberpunk films & documentaries, drinking too much coffee and exploring the great universe.
+Otherwise doodling, hiking, climbing, drinking too much coffee and watching cyberpunk films & documentaries.
