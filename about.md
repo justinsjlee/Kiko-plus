@@ -3,7 +3,7 @@ title: About
 permalink: "/about/"
 ---
 
-4th year student at the University of Toronto double majoring in statistics and economics on track to graduate in 06' 2018.
+4th year student at the University of Toronto double majoring in statistics and economics.
 
 My specialties:
 
