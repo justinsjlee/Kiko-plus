@@ -16,4 +16,4 @@ Projects I’ve worked on: Customer Segmentation, Marketing Mix Modelling, Multi
 
 I occasionally write about new things I’m learning at work & school under [projects](http://www.justinsjlee.com/projects).
 
-Otherwise doodling, hiking, climbing, drinking too much coffee and watching cyberpunk films & documentaries.
+Otherwise doodling, hiking, climbing.
