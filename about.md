@@ -3,17 +3,8 @@ title: About
 permalink: "/about/"
 ---
 
-4th year student at the University of Toronto double majoring in statistics and economics.
+I’m a Consultant at Ernst & Young in the Data Analytics practice under PI Advisory. Our team strives to help clients make fact-based decisions with data and use predictive analytics to improve bottomline performance. 
 
-My specialties:
+I majored in Economics & Statistics at the University of Toronto. A sample of my work is available under projects. 
 
-* BI reporting/dashboard automation.
-* Statistical modelling & supervised machine learning.
-* Experimental design, hypothesis testing & A/B testing. 
-* Storytelling with numbers & data visualization.
-
-Projects I’ve worked on: Customer Segmentation, Marketing Mix Modelling, Multi-Channel Attribution, Digital Analytics Implementation, Reporting & Optimization.
-
-I occasionally write about new things I’m learning at work & school under [projects](http://www.justinsjlee.com/projects).
-
-Otherwise doodling, hiking, climbing.
+Drop me an email hi@justinsjlee.com if you’d like to chat.
