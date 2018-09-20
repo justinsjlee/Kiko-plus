@@ -13,9 +13,9 @@ category: projects
 
 ![Screenshot](http://www.justinsjlee.com/chordiag_wlabels.png "Chord Diagram with Labels")
 
-One interesting method of data visualization I learned about during my co-op term is the chord diagram. I found this graph to be very useful in displaying flows between multiple groups in a concise manner. You can view the interactive graph [here](http://www.justinsjlee.com/telco_ex.html).
+One interesting method of visualizing data I learned about during my co-op term is with the chord diagram. I found this graph to be very useful in displaying flows between multiple groups in a concise manner. You can view the interactive graph [here](http://www.justinsjlee.com/telco_ex.html).
 
-Note: The numbers from the examples are made up by me solely for the purpose of this post.
+Note: The numbers from the examples are made up for the sake of the example. 
 
 ### Interperting the diagram
 
@@ -93,14 +93,10 @@ To export the diagram as a web page I'm using the Export function built into the
 
 ### Notes & credits
 
-Like other methods of data visualization, the chord diagram is just one tool for displaying the given data. There are various methods of visualizing 2-way flow, but I think the radial nature of this graph visualizes multiple relationships in a concise manner. Check out the [sankey diagram](https://bost.ocks.org/mike/sankey/) for visualizing 1-way flow; I think this method works especially well when there's multiple levels in a flow.
+Like the many other types of graphs, the chord diagram is just one tool for displaying the given data. There are various methods of visualizing 2-way flow, but I think the radial nature of this graph visualizes multiple relationships in a concise manner. Check out the [sankey diagram](https://bost.ocks.org/mike/sankey/) for visualizing 1-way flow, specficially for multi-level flow. 
 
 Read more about the ```chorddiag``` R package by [Matt Flor](https://github.com/mattflor/chorddiag).
 
 This article was inspired by [Visual Cinnamon's](https://www.visualcinnamon.com/2014/12/using-data-storytelling-with-chord.html) article on the chord diagram.
 
-Special thanks to the folks at [Clickinsight](https://www.clickinsight.ca) for giving me the oppurtunity to learn and encouraging me to apply new visualization techniques.
-
-
-
-
+Special thanks to the folks at [Clickinsight](https://www.clickinsight.ca) for encouraging me to try new things.
