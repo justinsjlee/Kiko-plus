@@ -3,8 +3,8 @@ title: About
 permalink: "/about/"
 ---
 
-I’m a Consultant at Ernst & Young in the Data Analytics practice under PI Advisory. Our team strives to help clients make fact-based decisions with data and use predictive analytics to improve bottomline performance. 
+I’m a Consultant at [Ernst & Young](https://www.ey.com/en_gl) in the Data Analytics practice under [PI Advisory](https://www.ey.com/ca/en/services/advisory/performance-improvement). Our team strives to help clients make [fact-based decisions](https://hbr.org/2010/01/better-decisions-through-analy) with data and use [predictive analytics](https://www.huffingtonpost.com/phil-simon/predictive-analytics_b_2802994.html) to improve bottomline performance. 
 
-I majored in Economics & Statistics at the University of Toronto. A sample of my work is available under projects. 
+I majored in Economics & Statistics at the [University of Toronto](https://www.utoronto.ca/). A sample of my work is available under [projects](www.justinsjlee.com/projects). 
 
 Drop me an email hi@justinsjlee.com if you’d like to chat.
