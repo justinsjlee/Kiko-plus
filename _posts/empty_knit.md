@@ -1,6 +1,15 @@
 ---
-title: "R Notebook"
-output: jekyllthat::jekylldown
+title: "R Notebook Test"
+date: 2018-11-26 00:00:00 -04:00
+tags:
+- wip
+- travel
+layout: post
+description: grad trip
+comments: true
+share: true
+category: blog
+---
 ---
 
 This is an [R Markdown](http://rmarkdown.rstudio.com) Notebook. When you execute code within the notebook, the results appear beneath the code.
