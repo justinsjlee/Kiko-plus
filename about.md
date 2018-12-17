@@ -7,4 +7,4 @@ I’m a Consultant at [EY](https://www.ey.com/en_gl) in the Data Analytics pract
 
 I majored in Economics & Statistics at the [University of Toronto](https://www.utoronto.ca/). A sample of my work is available under [projects](http://www.justinsjlee.com/projects/). 
 
-Always open to chatting with thoughtful and enthusiastic people. Drop me a note at [hi@justinsjlee.com](mailto:hi@justinsjlee.com).
+Always open to chatting with thoughtful and enthusiastic people [hi@justinsjlee.com](mailto:hi@justinsjlee.com).
