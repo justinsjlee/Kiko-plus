@@ -1,7 +1,7 @@
 ---
 title: Ecological Study of Dewlap Color and Size
 description: A report I worked on as part of my undergrad statistical consultation
-date: 2018-04-02
+date: 2018-04-06
 layout: pdf
 category: projects
 permalink: /projects/dewlap/
