@@ -4,7 +4,7 @@ date: 2018-12-02 00:00:00 -04:00
 tags:
 - statistics
 - r
-layout: post
+layout: pdf
 description: A report I worked on as part of my undergrad statistical consultation
 comments: false
 share: false
