@@ -1,11 +1,10 @@
 ---
 title: Ecological Study of Dewlap Color and Size
-date: 2018-12-02 00:00:00 -04:00
-layout: pdf
 description: A report I worked on as part of my undergrad statistical consultation
-comments: false
-share: false
+date: 2018-12-02
+layout: pdf
 category: projects
+permalink: /projects/creation-of-a-landscape/
 ---
 
 <iframe src="https://drive.google.com/file/d/1qkAacz-bvNNBkC7_9OoYLZcbXYcwId8b/preview" width="100%" height="100%"></iframe>
