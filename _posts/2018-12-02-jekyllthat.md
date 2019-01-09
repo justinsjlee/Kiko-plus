@@ -11,4 +11,4 @@ share: false
 category: projects
 ---
 
-<iframe src="https://drive.google.com/file/d/1qkAacz-bvNNBkC7_9OoYLZcbXYcwId8b/preview" width="100%" height="100%"></iframe>
+<iframe src="https://drive.google.com/file/d/1qkAacz-bvNNBkC7_9OoYLZcbXYcwId8b/preview" width="100%" height="480"></iframe>
