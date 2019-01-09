@@ -7,4 +7,4 @@ category: projects
 permalink: /projects/creation-of-a-landscape/
 ---
 
-<iframe src="https://drive.google.com/file/d/1qkAacz-bvNNBkC7_9OoYLZcbXYcwId8b/preview" width="100%" height=1000"></iframe>
+<iframe src="https://drive.google.com/file/d/1qkAacz-bvNNBkC7_9OoYLZcbXYcwId8b/preview" width="100%" height="100%"></iframe>
