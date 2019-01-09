@@ -11,6 +11,4 @@ share: false
 category: projects
 ---
 
-As part of the coursework at UofT (STA490), I advised researchers from the department of ecology on statistical analysis to identify whether lizard dewlap color and size were affected by environmental factors. The 8-month project composed of providing cleansing, analysis, visualization, modeling in R and reporting in Pages, Markdown and LaTeX.
-
-Currently working to update the page with an R Markdown document with all the steps. In the mean time, please refer to the [final report.](http://www.justinsjlee.com/Final%20Report%20v2.pdf)
+<iframe src="https://drive.google.com/file/d/1qkAacz-bvNNBkC7_9OoYLZcbXYcwId8b/preview" width="100%" height="100%"></iframe>
