@@ -23,4 +23,4 @@ To learn more about slope graphs, check out Edward Tufte's [comprehensive introd
 
 This viz was made for Tableau Public's #HackingOpenData project with the help of Melissa Schuurman.
 
-<iframe src="https://public.tableau.com/views/TuitionCostsRisingAcrossCanada/Main?:embed=true&:display_count=yes&:showVizHome=no" width="600" height="820" style="-webkit-transform:scale(0.80);-moz-transform-scale(0.80);"></iframe>
+<iframe src="https://public.tableau.com/views/TuitionCostsRisingAcrossCanada/Main?:embed=true&:display_count=yes&:showVizHome=no" width="100%" height="820" style="-webkit-transform:scale(0.90);-moz-transform-scale(0.80);"></iframe>
