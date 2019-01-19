@@ -27,3 +27,23 @@ Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by press
 When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).
 
 The preview shows you a rendered HTML copy of the contents of the editor. Consequently, unlike *Knit*, *Preview* does not run any R code chunks. Instead, the output of the chunk when it was last run in the editor is displayed.
+
+
+Counts are useful, but a proportions are obviously easier to interpret.
+
+    df %>%
+      group_by(PhoneService) %>%
+      summarise(counts = n(),
+                monthly.revenue = sum(MonthlyCharges)) %>%
+      mutate(count.prop = counts/sum(counts),
+             monthly.revenue.prop = monthly.revenue/sum(monthly.revenue))
+
+    ## # A tibble: 2 x 5
+    ##   PhoneService counts monthly.revenue count.prop monthly.revenue.prop
+    ##   <fct>         <int>           <dbl>      <dbl>                <dbl>
+    ## 1 No              682          28664.     0.0968               0.0628
+    ## 2 Yes            6361         427453.     0.903                0.937
+
+`mutate` allows us to create new columns from the data that is being
+passed down by the `%>%`. The pipe funnels down data by grouping it,
+summarising (totalling counts and revenue) to our mutate function.
