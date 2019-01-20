@@ -47,3 +47,26 @@ Counts are useful, but a proportions are obviously easier to interpret.
 `mutate` allows us to create new columns from the data that is being
 passed down by the `%>%`. The pipe funnels down data by grouping it,
 summarising (totalling counts and revenue) to our mutate function.
+
+
+We'll start off by reading in our data and glimpsing at it
+
+``` r
+library(knitr)
+```
+
+    ## Warning: package 'knitr' was built under R version 3.5.2
+
+``` r
+kable(head(iris[,1:3]), format = "markdown")
+```
+
+|  Sepal.Length|  Sepal.Width|  Petal.Length|
+|-------------:|------------:|-------------:|
+|           5.1|          3.5|           1.4|
+|           4.9|          3.0|           1.4|
+|           4.7|          3.2|           1.3|
+|           4.6|          3.1|           1.5|
+|           5.0|          3.6|           1.4|
+|           5.4|          3.9|           1.7|
+
