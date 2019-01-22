@@ -1,10 +1,220 @@
 ---
-title: Ecological Study of Dewlap Color and Size
-description: A report I worked on as part of my undergrad statistical consultation
-date: 2018-04-06
-layout: pdf
-category: projects
-permalink: /projects/dewlap/
+title: Building pivot tables in R (WIP)
+date: 2019-01-22 00:00:00 -04:00
+tags:
+- r
+layout: post
+description: A solution to data too big for excel
+comments: false
+share: false
+category: blog
 ---
 
-<iframe src="https://drive.google.com/file/d/1qkAacz-bvNNBkC7_9OoYLZcbXYcwId8b/preview" width="100%" height="100%"></iframe>
+### Leveraging R for pivot tables 
+
+For the data analyst, Excel is undoubtedly the most frequented tool for doing quick and dirty calculations a.k.a pivot tables. However, recently I've been running into some ugly situations with analyzing large files in Excel. 
+
+Trying to open a 1GB file (~1 million rows) leads to extremely slow performance and after ctrl + shift + del-ing out a couple times, I was starting to lose my sanity.
+
+![Large example image](http://www.justinsjlee.com/final%20gif.gif "Large example image")
+
+#### Thankfully, we have R. 
+This post is to demonstrate how to quickly create pivot tables in R with the `dplyr` and `tidyr` packages. The content is designed for anyone who wants to learn R and for me to reference later on. 
+
+For the examples below, we will use data on a telecom's customers. The dataset can be found on [IBM Watson Analytics Sample Data](https://www.ibm.com/communities/analytics/watson-analytics-blog/guide-to-sample-datasets/). The dataset contains:
+
+* A Unique customer ID 
+* Churn status - Customers who left within the last month
+* Services that each customer has signed up for - phone, internet, tv, etc...
+* Accounting details - tenure, contract, payment method, invoice amounts, etc...
+* Demographic info - gender, age range, and if they have partners/dependents
+
+We start off by loading the data
+
+```{r}
+df <- read.csv(url("https://community.watsonanalytics.com/wp-content/uploads
+/2015/03/WA_Fn-UseC_-Telco-Customer-Churn.csv"))
+```
+
+|customerID |gender | SeniorCitizen|Partner |Dependents | tenure|PhoneService |MultipleLines    |InternetService |OnlineSecurity |OnlineBackup |DeviceProtection |TechSupport |StreamingTV |StreamingMovies |Contract       |PaperlessBilling |PaymentMethod             | MonthlyCharges| TotalCharges|Churn |
+|:----------|:------|-------------:|:-------|:----------|------:|:------------|:----------------|:---------------|:--------------|:------------|:----------------|:-----------|:-----------|:---------------|:--------------|:----------------|:-------------------------|--------------:|------------:|:-----|
+|7590-VHVEG |Female |             0|Yes     |No         |      1|No           |No phone service |DSL             |No             |Yes          |No               |No          |No          |No              |Month-to-month |Yes              |Electronic check          |          29.85|        29.85|No    |
+|5575-GNVDE |Male   |             0|No      |No         |     34|Yes          |No               |DSL             |Yes            |No           |Yes              |No          |No          |No              |One year       |No               |Mailed check              |          56.95|      1889.50|No    |
+|3668-QPYBK |Male   |             0|No      |No         |      2|Yes          |No               |DSL             |Yes            |Yes          |No               |No          |No          |No              |Month-to-month |Yes              |Mailed check              |          53.85|       108.15|Yes   |
+|7795-CFOCW |Male   |             0|No      |No         |     45|No           |No phone service |DSL             |Yes            |No           |Yes              |Yes         |No          |No              |One year       |No               |Bank transfer (automatic) |          42.30|      1840.75|No    |
+|9237-HQITU |Female |             0|No      |No         |      2|Yes          |No               |Fiber optic     |No             |No           |No               |No          |No          |No              |Month-to-month |Yes              |Electronic check          |          70.70|       151.65|Yes   |
+|9305-CDSKC |Female |             0|No      |No         |      8|Yes          |Yes              |Fiber optic     |No             |No           |Yes              |No          |Yes         |Yes             |Month-to-month |Yes              |Electronic check          |          99.65|       820.50|Yes   |
+
+Thankfully this data is very clean, so we can start analyzing right away. A common question from the business might be about the breakdown of customers by the products/services they have.
+
+ To answer this, we pivot by the PhoneService column and count the rows. 
+
+```
+library(dplyr)
+
+df %>%
+  group_by(PhoneService) %>%
+  summarise(counts = n()) 
+```
+|PhoneService | counts|
+|:------------|------:|
+|No           |    682|
+|Yes          |   6361|
+
+First we have to load the `dplyr` package, which gives us functions like `group_by`, `summarise` and `n`. If you haven't installed it already, you can run `install.packages("dplyr")`. Once loaded, we can use the functions that allow us to group by and sum up the counts for our dataset. 
+
+A natural follow-up question might be about the monthly revenue from phone subscribers/non-subscribers. 
+
+```
+df %>%
+  group_by(PhoneService) %>%
+  summarise(counts = n(),
+            monthly.revenue = sum(MonthlyCharges))
+```
+|PhoneService | counts| monthly.revenue|
+|:------------|------:|---------------:|
+|No           |    682|         28663.5|
+|Yes          |   6361|        427453.1|
+
+As seen above, we can convineintly sum up the monthly charges column by phone subscription status by using the sum function. Notice that you can namethe new column when calculating the sum of monthly charges; Otherwise it will just show up as `sum(MonthlyCharges)`. 
+
+Counts are useful, but a proportions are obviously easier to interpret.
+```
+df %>%
+  group_by(PhoneService) %>%
+  summarise(counts = n(),
+            monthly.revenue = sum(MonthlyCharges)) %>%
+  mutate(count.prop = counts/sum(counts),
+         monthly.revenue.prop = monthly.revenue/sum(monthly.revenue))
+```
+|PhoneService | counts| monthly.revenue| count.prop| monthly.revenue.prop|
+|:------------|------:|---------------:|----------:|--------------------:|
+|No           |    682|         28663.5|  0.0968337|            0.0628425|
+|Yes          |   6361|        427453.1|  0.9031663|            0.9371575|
+
+
+`mutate` allows us to create new columns from the data that is being passed down by the `%>%`. The pipe  funnels down data by grouping it, summarising (totalling counts and revenue) to our mutate function. 
+
+We can group by multiple columns too. Let's see the breakdown of customers with multiple lines as well.  We'll round the proportions and multiplying by 100 for a cleaner look.  
+```
+df %>%
+  group_by(PhoneService,
+           MultipleLines) %>%
+  summarise(counts = n(),
+            monthly.revenue = sum(MonthlyCharges)) %>%
+  mutate(count.prop = counts/sum(counts),
+         monthly.revenue.prop = monthly.revenue/sum(monthly.revenue)) %>%
+  mutate(count.prop = round(count.prop * 100),
+         monthly.revenue.prop = round(monthly.revenue.prop * 100))
+```
+|PhoneService |MultipleLines    | counts| monthly.revenue| count.prop| monthly.revenue.prop|
+|:------------|:----------------|------:|---------------:|----------:|--------------------:|
+|No           |No phone service |    682|         28663.5|        100|                  100|
+|Yes          |No               |   3390|        183721.2|         53|                   43|
+|Yes          |Yes              |   2971|        243731.9|         47|                   57|
+
+We can also use filters to only see relevant information. Filtering for `PhoneServce == "Yes"` passes down only rows with that meet the condition to the `group_by` function.
+
+```
+df %>%
+  filter(PhoneService == "Yes") %>%
+  group_by(PhoneService,
+           MultipleLines) %>%
+  summarise(counts = n(),
+            monthly.revenue = sum(MonthlyCharges)) %>%
+  mutate(count.prop = counts/sum(counts),
+         monthly.revenue.prop = monthly.revenue/sum(monthly.revenue))
+```
+|PhoneService |MultipleLines | counts| monthly.revenue| count.prop| monthly.revenue.prop|
+|:------------|:-------------|------:|---------------:|----------:|--------------------:|
+|Yes          |No            |   3390|        183721.2|  0.5329351|            0.4298045|
+|Yes          |Yes           |   2971|        243731.9|  0.4670649|            0.5701955|
+
+Pivotting on another variable via the columns is a common exercise in excel. Let's breakdown the sum of monthly revenue by contract type
+```
+library(tidyr)
+
+df %>%
+  filter(PhoneService == "Yes") %>%
+  group_by(PhoneService, MultipleLines, Contract) %>%
+  summarise(counts = n()) %>%
+  spread(key = Contract, value = counts)
+```
+|PhoneService |MultipleLines | Month-to-month| One year| Two year|
+|:------------|:-------------|--------------:|--------:|--------:|
+|Yes          |No            |           2017|      712|      661|
+|Yes          |Yes           |           1482|      616|      873|
+
+The average revenue from each customer may be of interest too. We simply replace the `n()` function with the `mean()`.
+
+```
+df %>%
+  filter(PhoneService == "Yes") %>%
+  group_by(PhoneService, MultipleLines, Contract) %>%
+  summarise(avg.monthly.revenue = round(mean(MonthlyCharges), 1)) %>%
+  spread(key = Contract, value = avg.monthly.revenue)
+
+```
+|PhoneService |MultipleLines | Month-to-month| One year| Two year|
+|:------------|:-------------|--------------:|--------:|--------:|
+|Yes          |No            |           58.5|     52.3|     43.1|
+|Yes          |Yes           |           84.7|     84.4|     75.9|
+
+That's pretty much it for exercises I'd do in Excel. Of course R has more useful capabilities. 
+
+One is wrangling the data in the desired format. Since our services (Phone, Internet, TV) are one-hot encoded (separate dummy variable columns for each service), we can't a breakdown for all services. 
+
+
+|PhoneService |InternetService |StreamingTV |Services                 |
+|:------------|:---------------|:-----------|:------------------------|
+|No           |DSL             |No          |Internet                 |
+|Yes          |No              |No          |Phone          	      |
+|Yes          |DSL             |No          |Phone /  Internet         |
+|No           |DSL             |No          |Internet                 |
+|Yes          |Fiber optic     |No          |Phone /  Internet         |
+|Yes          |Fiber optic     |Yes         |Phone /  Internet  / TV   |
+
+By using the `paste` and `ifelse` functions we can create a new column called `Services` which gives us one column for all three subscriptions. 
+```
+df %>%
+  mutate(Services = ifelse(PhoneService == "Yes", "Phone /", "")) %>%
+  mutate(Services = ifelse(InternetService %in% c("DSL", "Fiber optic"), 
+                           paste(Services, "Internet ", "/"), Services)) %>%
+  mutate(Services = ifelse(StreamingTV == "Yes",
+                           paste(Services, "TV", "/"), Services)) %>%
+  group_by(Services, Contract) %>%
+  summarise(avg.monthly.revenue = round(mean(MonthlyCharges), 1)) %>%
+  #arrange(desc(avg.monthly.revenue)) %>%
+  spread(key = Contract, value = avg.monthly.revenue)
+```
+|Services                 | Month-to-month| One year| Two year|
+|:------------------------|--------------:|--------:|--------:|
+|Internet  /              |           32.0|     38.2|     43.0|
+|Internet  / TV /         |           47.1|     52.3|     57.4|
+|Phone /                  |           20.4|     20.8|     21.8|
+|Phone / Internet  /      |           69.6|     71.3|     74.7|
+|Phone / Internet  / TV / |           91.4|     93.6|     95.7|
+Another is R's statistical modelling capabilites. This is really where R shines as many of the functions are built by statisticians with great documentation. Oh and did I mention R is free and open-source? In my opinion, the other serious players in this market are SPSS and SAS, both of which cost anywhere from \$1K to +\$100K for an enterprise license.
+
+For this dataset, the churn status is likely of interset since the busniess can take actions to stop a customer from leaving if a customer is predicted to churn and consequently increase revenue. Since this post is about pivot tables, I won't go into the details.
+
+```
+m <- glm(Churn ~ gender + tenure + PhoneService + InternetService
+         + StreamingTV + Contract + MonthlyCharges,
+         data = df, family = "binomial")
+
+sample_customer = data.frame(gender ="Female",
+                             tenure = 10,
+                             PhoneService = "Yes",
+                             #MultipleLines = "Yes",
+                             InternetService = "DSL",
+                             StreamingTV = "No",
+                             Contract = "Two year",
+                             MonthlyCharges = 100)
+
+predict(m, sample_customer, type = "response")
+```
+
+The `glm` package allows you to fit a logistic regression. Predicting the probability of churn for our sample data results in 0.0715765 ~ 7.16%. 
+
+To do this properly we'd want to split up the data (train/test), evaluate model diagnostics, select variables through a criterion and check the model assumptions. You can read more about logistion regression and various other machine learning models for free in [this book](https://web.stanford.edu/~hastie/ElemStatLearn/)
