@@ -32,22 +32,12 @@ For the examples below, we will use data on a telecom's customers. The dataset c
 We start off by loading the data
 
 ```{r}
-df <- read.csv(url("https://community.watsonanalytics.com/wp-content/uploads
-/2015/03/WA_Fn-UseC_-Telco-Customer-Churn.csv"))
+df <- read.csv(url("https://community.watsonanalytics.com/wp-content/uploads/2015/03/WA_Fn-UseC_-Telco-Customer-Churn.csv"))
 ```
-
-|customerID |gender | SeniorCitizen|Partner |Dependents | tenure|PhoneService |MultipleLines    |InternetService |OnlineSecurity |OnlineBackup |DeviceProtection |TechSupport |StreamingTV |StreamingMovies |Contract       |PaperlessBilling |PaymentMethod             | MonthlyCharges| TotalCharges|Churn |
-|:----------|:------|-------------:|:-------|:----------|------:|:------------|:----------------|:---------------|:--------------|:------------|:----------------|:-----------|:-----------|:---------------|:--------------|:----------------|:-------------------------|--------------:|------------:|:-----|
-|7590-VHVEG |Female |             0|Yes     |No         |      1|No           |No phone service |DSL             |No             |Yes          |No               |No          |No          |No              |Month-to-month |Yes              |Electronic check          |          29.85|        29.85|No    |
-|5575-GNVDE |Male   |             0|No      |No         |     34|Yes          |No               |DSL             |Yes            |No           |Yes              |No          |No          |No              |One year       |No               |Mailed check              |          56.95|      1889.50|No    |
-|3668-QPYBK |Male   |             0|No      |No         |      2|Yes          |No               |DSL             |Yes            |Yes          |No               |No          |No          |No              |Month-to-month |Yes              |Mailed check              |          53.85|       108.15|Yes   |
-|7795-CFOCW |Male   |             0|No      |No         |     45|No           |No phone service |DSL             |Yes            |No           |Yes              |Yes         |No          |No              |One year       |No               |Bank transfer (automatic) |          42.30|      1840.75|No    |
-|9237-HQITU |Female |             0|No      |No         |      2|Yes          |No               |Fiber optic     |No             |No           |No               |No          |No          |No              |Month-to-month |Yes              |Electronic check          |          70.70|       151.65|Yes   |
-|9305-CDSKC |Female |             0|No      |No         |      8|Yes          |Yes              |Fiber optic     |No             |No           |Yes              |No          |Yes         |Yes             |Month-to-month |Yes              |Electronic check          |          99.65|       820.50|Yes   |
 
 Thankfully this data is very clean, so we can start analyzing right away. A common question from the business might be about the breakdown of customers by the products/services they have.
 
- To answer this, we pivot by the PhoneService column and count the rows. 
+To answer this, we pivot by the PhoneService column and count the rows. 
 
 ```
 library(dplyr)
@@ -56,10 +46,12 @@ df %>%
   group_by(PhoneService) %>%
   summarise(counts = n()) 
 ```
+
 |PhoneService | counts|
 |:------------|------:|
 |No           |    682|
 |Yes          |   6361|
+
 
 First we have to load the `dplyr` package, which gives us functions like `group_by`, `summarise` and `n`. If you haven't installed it already, you can run `install.packages("dplyr")`. Once loaded, we can use the functions that allow us to group by and sum up the counts for our dataset. 
 
