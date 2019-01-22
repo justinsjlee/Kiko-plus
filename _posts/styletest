@@ -4,7 +4,7 @@ date: 2016-08-15 00:00:00 -04:00
 tags:
 - test
 - style
-layout: post
+layout: 
 description: Test post for style
 comments: true
 share: true
