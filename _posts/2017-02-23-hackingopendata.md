@@ -22,5 +22,3 @@ As expected, tuition is increasing for most undergraduate programs in Canadian u
 To learn more about slope graphs, check out Edward Tufte's [comprehensive introduction here](https://www.edwardtufte.com/bboard/q-and-a-fetch-msg?msg_id=0003nk).
 
 This viz was made for Tableau Public's #HackingOpenData project with the help of Melissa Schuurman.
-
-<iframe src="https://public.tableau.com/views/TuitionCostsRisingAcrossCanada/Main?:embed=true&:display_count=yes&:showVizHome=no" width="100%" height="803"></iframe>
